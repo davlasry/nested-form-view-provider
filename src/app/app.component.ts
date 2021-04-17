@@ -17,8 +17,6 @@ export class AppComponent {
   }
 
   submit(): void {
-    // console.log(this.form.value);
-    // console.log(this.form.errors);
-    // console.log("form.valid", this.form.valid);
+    console.log(this.form.value);
   }
 }
