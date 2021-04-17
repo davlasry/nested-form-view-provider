@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'nested-form-view-provider';
+  form = this.formBuilder.group({
+    age: [null, Validators.required]
+  });
+
+  constructor(private formBuilder: FormBuilder) {
+  }
+
+  submit(): void {
+    // console.log(this.form.value);
+    // console.log(this.form.errors);
+    // console.log("form.valid", this.form.valid);
+  }
 }
