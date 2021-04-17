@@ -8,7 +8,9 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AppComponent {
   form = this.formBuilder.group({
-    age: [null, Validators.required]
+    firstName: ['', Validators.required],
+    lastName: ['', Validators.required],
+    age: [null, Validators.required],
   });
 
   constructor(private formBuilder: FormBuilder) {
