@@ -1,11 +1,12 @@
+<h1>Nested form using view providers</h1>
+
 <form [formGroup]="form" (ngSubmit)="submit()">
 
-  <!--  <app-identity [formGroup]="form"></app-identity>-->
   <app-identity></app-identity>
 
   <mat-form-field class="age">
-    <label>Age</label>
-    <input type="number" matInput formControlName="age"/>
+    <mat-label>Age</mat-label>
+    <input type="number" matInput formControlName="age" />
   </mat-form-field>
 
   <div class="button">
