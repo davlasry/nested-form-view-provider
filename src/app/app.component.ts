@@ -8,6 +8,8 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class AppComponent {
   form = this.formBuilder.group({
+    firstName: ['', Validators.required],
+    lastName: ['', Validators.required],
     age: [null, Validators.required]
   });
 
